@@ -1,19 +1,22 @@
 $small: 390px;
 $medium: 1024px;
-$large: 1440px;
+$large: 1130px;
 
 body {
-  color: #fff;
   background-color: #000;
-}
-
-.page-container {
-  margin: 0 auto;
-  max-width: 1130px;
+  color: #fff;
 }
 
 .section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   padding: 64px 24px;
+}
+
+.section > * {
+  max-width: 1130px;
+  width: 100%;
 }
 
 .headline {
@@ -23,6 +26,7 @@ body {
   font-weight: 500;
   letter-spacing: 0.05em;
   line-height: 15.6px;
+  margin-bottom: 32px;
   text-transform: uppercase;
 
   &::before {
@@ -39,7 +43,6 @@ body {
   font-weight: 500;
   letter-spacing: -0.02em;
   line-height: 40px;
-  margin-top: 32px;
 
   @media (min-width: $medium) {
     width: 350px;
@@ -47,9 +50,9 @@ body {
 }
 
 .steps {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 22px;
   margin: 64px 0;
 
@@ -83,30 +86,37 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 95px;
+
+  @media (min-width: $medium) {
+    flex-direction: row;
+  }
 }
 
 .process-step {
-  display: flex;
   background-color: #171717;
-  padding: 40px 32px;
-  gap: 16px;
   border-radius: 8px;
+  display: flex;
   flex-direction: column;
+  gap: 16px;
+  padding: 40px 32px;
+
+  @media (min-width: $medium) {
+    flex: 1;
+  }
 }
 
 .step-number {
-  background-color: #ff2325;
-  color: #000;
-  width: 48px;
-  height: 48px;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  background-color: #ff2325;
+  border-radius: 9.6px;
+  color: #000;
+  display: flex;
+  font-family: "Inter", sans-serif;
   font-size: 24px;
   font-weight: 500;
-  font-family: "Inter", sans-serif;
-  border-radius: 9.6px;
+  height: 48px;
+  justify-content: center;
+  width: 48px;
 }
 
 .step-description {
@@ -118,12 +128,17 @@ body {
 }
 
 .vision-container {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 36.4px;
+  margin-top: 95px;
   max-width: 800px;
   text-align: center;
-  font-weight: 500;
-  font-size: 26px;
-  line-height: 36.4px;
-  padding-bottom: 30px;
+
+  @media (min-width: $medium) {
+    margin-bottom: 200px;
+    margin-top: 240px;
+  }
 }
 
 .highlight-text {
@@ -133,57 +148,90 @@ body {
 
 .financial-container {
   display: flex;
-  gap: 24px;
   flex-direction: column;
+  gap: 24px;
+
+  @media (min-width: $medium) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .financial-card {
   background-color: #ffe0e0;
   border-radius: 8px;
   padding: 24px 24px 32px 24px;
+
+  @media (min-width: $medium) {
+    width: 264px;
+  }
 }
 
 .financial-value {
   color: #ff2325;
-  font-weight: 500;
   font-size: 40px;
-  line-height: 50px;
+  font-weight: 500;
   letter-spacing: -0.02em;
+  line-height: 50px;
 }
 
 .financial-description {
   color: #000000;
-  font-weight: 500;
   font-size: 22px;
+  font-weight: 500;
   line-height: 27.5px;
   margin: 12px 0;
 }
 
 .financial-tag {
   color: #807070;
-  text-transform: uppercase;
-  font-weight: 500;
   font-size: 13px;
-  line-height: 15.6px;
+  font-weight: 500;
   letter-spacing: 0.05em;
+  line-height: 15.6px;
+  text-transform: uppercase;
+}
+
+.promo-container {
+  margin-top: 56px;
+
+  @media (min-width: $medium) {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 64px;
+    margin-top: 104px;
+  }
+}
+
+.promo-info {
+  @media (min-width: $medium) {
+    width: 500px;
+  }
 }
 
 .promo-card {
-  margin: 0 auto;
-  position: relative;
-  width: 342px;
-  height: 342px;
+  background-color: #000;
   background-image: url("/bg-car.png");
   background-position: center;
-  margin-top: 56px;
-  margin-bottom: 32px;
   border-radius: 8px;
+  height: 342px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  position: relative;
+  width: 342px;
+
+  @media (min-width: $medium) {
+    height: 414px;
+    margin: 0;
+    margin-left: auto;
+    width: 438px;
+  }
 }
 
 .promo-content {
+  left: 50%;
   position: absolute;
   top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -191,24 +239,27 @@ body {
   margin: 0 auto 24px auto;
 }
 
-.feature-list {
+.heading2 {
+  @media (min-width: $medium) {
+    width: 100%;
+  }
 }
 
 .feature-item {
-  display: flex;
   align-items: center;
+  display: flex;
   margin: 18px 0;
 }
 
 .feature-box {
+  align-items: center;
   background-color: #ebebeb;
-  width: 40px;
-  height: 40px;
   border-radius: 9.6px;
   display: flex;
+  height: 40px;
   justify-content: center;
-  align-items: center;
   margin-right: 16px;
+  width: 40px;
 }
 
 .feature-text {

@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function HomePage() {
   return (
-    <main className="page-container">
+    <main>
       <section className="how-it-works section">
         <header>
           <h2 className="headline">How It Works</h2>
@@ -118,7 +118,6 @@ export default function HomePage() {
       <section className="results-so-far p-6 bg-white text-black section">
         <header>
           <h2 className="headline">Results so far</h2>
-          <h1 className="heading">Drive away with more than just a car</h1>
         </header>
 
         <div className="financial-container">
@@ -156,68 +155,72 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="promo-card bg-black">
-          <div className="promo-content">
-            <Image
-              src="icons/coin.svg"
-              alt="AutoCoinCars icon"
-              width={55}
-              height={55}
-              className="promo-logo"
-            />
-            <Image
-              src="icons/logo.svg"
-              alt="AutoCoinCars icon"
-              width={217}
-              height={24}
-              className="promo-logo"
-            />
+        <div className="promo-container">
+          <div className="promo-card">
+            <div className="promo-content">
+              <Image
+                src="icons/coin.svg"
+                alt="AutoCoinCars icon"
+                width={55}
+                height={55}
+                className="promo-logo"
+              />
+              <Image
+                src="icons/logo.svg"
+                alt="AutoCoinCars icon"
+                width={217}
+                height={24}
+                className="promo-logo"
+              />
+            </div>
           </div>
-        </div>
 
-        <div>
-          <h1 className="heading">
-            We recently acquired AutoCoin Cars to bolster our network and
-            offering
-          </h1>
+          <div className="promo-info">
+            <h1 className="heading heading2">
+              We recently acquired AutoCoin Cars to bolster our network and
+              offering
+            </h1>
 
-          <div className="feature-list">
-            <div className="feature-item">
-              <div className="feature-box">
-                <Image
-                  src="icons/tick.svg"
-                  alt="Tick icon"
-                  width={24}
-                  height={24}
-                />
+            <div className="feature-list">
+              <div className="feature-item">
+                <div className="feature-box">
+                  <Image
+                    src="icons/tick.svg"
+                    alt="Tick icon"
+                    width={24}
+                    height={24}
+                  />
+                </div>
+                <p className="feature-text">
+                  Access to over 17,000 Luxury Cars
+                </p>
               </div>
-              <p className="feature-text">Access to over 17,000 Luxury Cars</p>
-            </div>
-            <div className="feature-item">
-              <div className="feature-box">
-                <Image
-                  src="icons/tick.svg"
-                  alt="Tick icon"
-                  width={24}
-                  height={24}
-                />
+              <div className="feature-item">
+                <div className="feature-box">
+                  <Image
+                    src="icons/tick.svg"
+                    alt="Tick icon"
+                    width={24}
+                    height={24}
+                  />
+                </div>
+                <p className="feature-text">
+                  Global network of Car Dealers around the world
+                </p>
               </div>
-              <p className="feature-text">
-                Global network of Car Dealers around the world
-              </p>
-            </div>
-            <div className="feature-item">
-              <div className="feature-box">
-                <Image
-                  src="icons/tick.svg"
-                  alt="Tick icon"
-                  width={24}
-                  height={24}
-                />
+              <div className="feature-item">
+                <div className="feature-box">
+                  <Image
+                    src="icons/tick.svg"
+                    alt="Tick icon"
+                    width={24}
+                    height={24}
+                  />
+                </div>
+                <p className="feature-text">
+                  Annual Revenue of $5.6 Million per year.
+                </p>
               </div>
-              <p className="feature-text">
-                Annual Revenue of $5.6 Million per year.
-              </p>
             </div>
           </div>
         </div>
