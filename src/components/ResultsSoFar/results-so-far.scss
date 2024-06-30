@@ -1,0 +1,132 @@
+@import "@/styles/variables.scss";
+@import "@/styles/mixins.scss";
+
+.section--results {
+  background-color: $white;
+  color: $black;
+}
+
+.financial-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @media (min-width: $medium) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.financial-card {
+  background-color: $pink-peach;
+  border-radius: 8px;
+  padding: 24px 24px 32px 24px;
+  @include scale-up-hover;
+
+  @media (min-width: $medium) {
+    width: 264px;
+  }
+}
+
+.financial-value {
+  color: $red-cherry;
+  font-size: $fs-xh;
+  font-weight: $font-medium;
+  letter-spacing: -0.02em;
+  line-height: 50px;
+}
+
+.financial-description {
+  color: $black;
+  font-size: $fs-xl;
+  font-weight: $font-medium;
+  line-height: 27px;
+  margin: 12px 0;
+
+  @media (min-width: $medium) {
+    font-size: $fs-xxl;
+  }
+}
+
+.financial-tag {
+  color: $grey-dove;
+  font-size: $fs-s;
+  font-weight: $font-medium;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.promo-container {
+  margin-top: 56px;
+
+  @media (min-width: $medium) {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 64px;
+    margin-top: 104px;
+  }
+}
+
+.promo-info {
+  @media (min-width: $medium) {
+    width: 500px;
+  }
+}
+
+.promo-card {
+  background-color: $black;
+  background-image: url("/car.webp");
+  background-position: center;
+  border-radius: 8px;
+  height: 342px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  position: relative;
+  width: 342px;
+
+  @media (min-width: $medium) {
+    height: 414px;
+    margin: 0;
+    margin-left: auto;
+    width: 438px;
+  }
+}
+
+.promo-content {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.promo-logo {
+  margin: 0 auto 24px auto;
+}
+
+.heading--promo {
+  @media (min-width: $medium) {
+    width: 100%;
+  }
+}
+
+.feature-item {
+  align-items: center;
+  display: flex;
+  margin: 18px 0;
+}
+
+.feature-box {
+  align-items: center;
+  background-color: $grey-smoke;
+  border-radius: 8px;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  margin-right: 16px;
+  width: 40px;
+}
+
+.feature-text {
+  font-family: $font-inter;
+  line-height: 22px;
+}

@@ -1,0 +1,99 @@
+@import "@/styles/variables.scss";
+@import "@/styles/mixins.scss";
+
+.steps {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin: 64px 0;
+
+  @media (min-width: $medium) {
+    flex-direction: row;
+    justify-content: center;
+    margin: 145px 0 130px 0;
+  }
+}
+
+.nav-link {
+  align-items: center;
+  border-radius: 64px;
+  border: 1px solid $red-cherry;
+  display: inline-flex;
+  font-size: $fs-l;
+  font-weight: $font-medium;
+  height: 57px;
+  justify-content: center;
+  line-height: 25px;
+  padding: 16px 36px 16px 32px;
+  text-align: center;
+  @include scale-up-hover;
+
+  img {
+    display: inline-block;
+    margin-right: 8px;
+  }
+}
+
+.process-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @media (min-width: $medium) {
+    flex-direction: row;
+  }
+}
+
+.process-step {
+  background-color: $grey-charcoal;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 40px 32px;
+  @include scale-up-hover;
+
+  @media (min-width: $medium) {
+    flex: 1;
+  }
+}
+
+.step-number {
+  align-items: center;
+  background-color: $red-cherry;
+  border-radius: 8px;
+  color: $black;
+  display: flex;
+  font-family: $font-inter;
+  font-size: $fs-xxl;
+  font-weight: $font-medium;
+  height: 48px;
+  justify-content: center;
+  width: 48px;
+}
+
+.step-description {
+  font-family: $font-inter;
+  line-height: 22.4px;
+  text-align: left;
+}
+
+.vision-container {
+  font-size: $fs-xxxl;
+  font-weight: $font-medium;
+  line-height: 36.4px;
+  margin-top: 95px;
+  max-width: 800px;
+  text-align: center;
+
+  @media (min-width: $medium) {
+    margin-bottom: 200px;
+    margin-top: 240px;
+  }
+}
+
+.highlight-text {
+  background-color: $white-ghost;
+  padding: 0 5px;
+}

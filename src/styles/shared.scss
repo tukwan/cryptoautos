@@ -1,0 +1,47 @@
+@import "./variables";
+
+body {
+  background-color: $black;
+  color: $white;
+}
+
+.section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 64px 24px;
+
+  > * {
+    max-width: $large;
+    width: 100%;
+  }
+}
+
+.headline {
+  align-items: center;
+  display: flex;
+  font-size: $fs-s;
+  font-weight: $font-medium;
+  letter-spacing: 0.05em;
+  line-height: 16px;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+
+  &::before {
+    border-bottom: 1px solid $red-cherry;
+    content: "";
+    height: 1px;
+    margin-right: 16px;
+    width: 32px;
+  }
+}
+
+.heading {
+  font-size: $fs-h;
+  font-weight: $font-medium;
+  line-height: 40px;
+
+  @media (min-width: $medium) {
+    width: 350px;
+  }
+}

@@ -1,0 +1,3 @@
+@mixin scale-up-hover {
+  @apply transition-transform duration-300 hover:scale-105;
+}
