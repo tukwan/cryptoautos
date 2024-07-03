@@ -19,7 +19,7 @@ Implemented 2 sections from the Figma:
 
 ## Dev
 
-`yarn && yarn dev`
+`pnpm i && pnpm dev`
 
 ## Links
 

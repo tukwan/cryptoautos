@@ -1,7 +1,7 @@
-import "@/styles/globals.css"
-import "@/styles/shared.scss"
+import "@/styles/globals.scss"
 import type { Metadata } from "next"
 import { Figtree, Inter } from "next/font/google"
+import clsx from "clsx"
 
 const figtree = Figtree({ subsets: ["latin"], variable: "--font-figtree" })
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
@@ -13,9 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${figtree.variable} ${inter.variable}`}>
-        {children}
-      </body>
+      <body className={clsx(figtree.variable, inter.variable)}>{children}</body>
     </html>
   )
 }

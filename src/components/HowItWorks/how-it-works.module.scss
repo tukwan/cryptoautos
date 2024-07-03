@@ -28,6 +28,7 @@
   padding: 16px 36px 16px 32px;
   text-align: center;
   @include scale-up-hover;
+  @apply animate-pulse;
 
   img {
     display: inline-block;
@@ -83,6 +84,7 @@
   font-size: $fs-xxxl;
   font-weight: $font-medium;
   line-height: 36.4px;
+  margin: 0 auto;
   margin-top: 95px;
   max-width: 800px;
   text-align: center;
